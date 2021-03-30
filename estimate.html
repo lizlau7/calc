@@ -16,20 +16,19 @@
 
 
 <h2>Total Cost Calculator</h2>
-<title>Addition</title>
+<title>Cost</title>
     <script>
         function display(id_name,result_name){
        document.getElementById(result_name).innerHTML = document.getElementById(id_name).value;
        }
        function calculate(id1,id2,result_id) {
-       document.getElementById(result_id).innerHTML = parseInt(document.getElementById(id1).value)+parseInt(document.getElementById(id2).value)
+       document.getElementById(result_id).innerHTML = 12.56 *(parseInt(document.getElementById(id1).value)+ 0.8722 * (parseInt(document.getElementById(id2).value)^2) + 12.56 * (parseInt(document.getElementById(id2).value)))
        }
     </script>
 </head>
 <div class="input">
     Height (inches):
     <input type="text" id="input1_text">
-    <button type="button" onclick="display('input1_text','input1')">Height (inches)</button>
     <span id="input1"></span>
 </div>
 
