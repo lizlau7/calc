@@ -6,6 +6,8 @@ app = Flask(__name__)
 @app.route('/estimate')
 def home():
    return ('estimate.html')
+if __name__=='__main__':
+   app.run('localhost',4999)
 
 
 def get_values():
