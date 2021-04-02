@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-   return rendern_template('index.html')
+   return flask.render_template('index.html')
 
 @app.route('/estimate')
 def estimate():
-   return render_template('estimate.html')
+   return flask.render_template('estimate.html')
 
 def get_values():
    value1 = flask.request.args.get('val1')
