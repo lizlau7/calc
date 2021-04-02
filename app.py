@@ -6,6 +6,10 @@ app = Flask(__name__)
 def estimate():
    return flask.render_template('estimate.html')
 
+@app.route('/templates/about')
+def about():
+   return flask.render_template('templates/About.html')
+
 def get_values():
    value1 = flask.request.args.get('val1')
    value2 = flask.request.args.get('val2')
