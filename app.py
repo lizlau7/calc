@@ -8,7 +8,7 @@ def estimate():
 
 @app.route('/templates/about')
 def about():
-   return flask.render_template('templates/About.html')
+   return flask.render_template('About.html')
 
 def get_values():
    value1 = flask.request.args.get('val1')
