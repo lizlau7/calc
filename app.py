@@ -10,6 +10,19 @@ def estimate():
 def about():
    return flask.render_template('About.html')
 
+@app.route('/templates/estimate')
+def about():
+   return flask.render_template('estimate.html')
+
+@app.route('/templates/home')
+def about():
+   return flask.render_template('Home.html')
+
+@app.route('/templates/index')
+def about():
+   return flask.render_template('index.html')
+
+
 def get_values():
    value1 = flask.request.args.get('val1')
    value2 = flask.request.args.get('val2')
