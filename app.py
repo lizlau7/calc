@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def estimate():
-   return flask.render_template('estimate.html')
+   return flask.render_template('index.html')
 
 @app.route('/templates/about')
 def about():
