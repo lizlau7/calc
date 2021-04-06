@@ -14,7 +14,7 @@ def about():
 def about():
    return flask.render_template('estimate.html')
 
-@app.route('/templates/Home.html')
+@app.route('/templates/Home')
 def about():
    return flask.render_template('Home.html')
 
