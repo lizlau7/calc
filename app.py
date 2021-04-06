@@ -10,17 +10,13 @@ def estimate():
 def about():
    return flask.render_template('About.html')
 
-@app.route('/templates/Estimate.html')
+@app.route('/templates/estimate')
 def about():
    return flask.render_template('estimate.html')
 
-@app.route('/templates/Home')
+@app.route('/templates/home')
 def about():
    return flask.render_template('Home.html')
-
-@app.route('/templates/index')
-def about():
-   return flask.render_template('index.html')
 
 
 def get_values():
